@@ -62,3 +62,78 @@ img.Styles_nav_avatar{
     box-shadow:0 0 40px 20px 
     #3e647530;
 }
+.wrapper{
+}
+.wrapper .text{
+    position: relative;
+    color: #BD93F9;
+    font-size: 30px;
+    font-weight: 600;
+}
+.wrapper .text.static-txt{
+    color: white;
+}
+.wrapper .text.dynamic-txt::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    background-color: red;
+}
+/*
+.wrapper{
+    display: inline-flex;
+}
+.wrapper .static-txt{
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.wrapper .dynamic-txt {
+    margin-left: -15px;
+    height: 45px;
+    line-height: 45px;
+    overflow: hidden;
+}
+.dynamic-txt li{
+    color: #BD93F9;
+    list-style: none;
+    font-size: 32px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(3) infinite;
+}
+
+@keyframes slide{
+    100%{
+        top: -143px;
+    }
+}
+
+.dynamic-txt li span{
+    position: relative;
+}
+.dynamic-txt li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 102%;
+    width: 101%;
+    background: #101114;
+    border-left: 2px solid  #BD93F9;
+    animation: typing 1.5s steps(10) infinite;
+}
+
+@keyframes typing{
+    40%, 60%{
+        left: calc(100% + 30px);
+      }
+      100%{
+        left: 0;
+      }
+}
+*/
